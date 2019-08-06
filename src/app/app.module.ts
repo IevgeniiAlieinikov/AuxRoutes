@@ -13,7 +13,6 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 import { routingModule } from './routing.module';
-import { HeavyStuffModule } from './heavy-stuff/heavy-stuff.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,7 @@ import { HeavyStuffModule } from './heavy-stuff/heavy-stuff.module';
     SidebarComponent,
     ProductListSidebarComponent
   ],
-  imports: [BrowserModule, routingModule, HeavyStuffModule],
+  imports: [BrowserModule, routingModule],
   providers: [],
   bootstrap: [AppComponent]
 })

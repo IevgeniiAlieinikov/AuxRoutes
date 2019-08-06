@@ -1,7 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-	<a [routerLink]="[{ outlets: { primary: ['products'],sidebar: ['products'] } }]">
+	<a [routerLink]="[{ outlets: { primary: ['products'] } }]">
 		Products
+  </a>
+</div>
+<div style="text-align:center">
+	<a [routerLink]="[{ outlets: { primary: ['products'], sidebar: ['investor'] } }]">
+		Products + Sidebar
   </a>
 </div>
 <div style="text-align:center">
@@ -9,6 +13,17 @@
 		InvestorView
   </a>
 </div>
+<div style="text-align:center">
+	<a [routerLink]="[{ outlets: { primary: ['investor'], sidebar: ['investor'] } }]">
+		InvestorView + Sidebar
+  </a>
+</div>
+
+<!-- <div style="text-align:center">
+	<a [routerLink]="[{ outlets: { primary: ['products'], sidebar: [] } }]">
+		Products - Sidebar
+  </a>
+</div> -->
 
 
 <div>
