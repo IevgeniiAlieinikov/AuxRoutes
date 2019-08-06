@@ -10,9 +10,13 @@ const routes: Routes = [
       {
         path: 'investor-view',
         loadChildren: () => import(`../investor/investor.module`).then(m => m.InvestorModule)
+      },
+      {
+        path: 'product',
+        loadChildren: () => import(`../product/product.module`).then(m => m.ProductModule)
       }
     ]
   }
 ];
 
-export const sharedRoutingModule: ModuleWithProviders = RouterModule.forChild(routes);
+export const SharedRoutingModule: ModuleWithProviders = RouterModule.forChild(routes);

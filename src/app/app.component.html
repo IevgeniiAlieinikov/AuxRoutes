@@ -4,8 +4,13 @@
   </a>
 </div>
 <div style="text-align:center">
-	<a [routerLink]="[{ outlets: { primary: ['product', 'list'], modal: ['rm', 'investor-view'] } }]">
-		Products + Sidebar
+	<a [routerLink]="[{ outlets: { primary: ['product', 'list'], modal: ['investor-view'] } }]">
+		Products + Investor in modal
+  </a>
+</div>
+<div style="text-align:center">
+	<a [routerLink]="[{ outlets: { primary: ['product', 'list'], modal: ['product', 'list'] } }]">
+		Products + Products in modal
   </a>
 </div>
 <div style="text-align:center">
@@ -14,8 +19,8 @@
   </a>
 </div>
 <div style="text-align:center">
-	<a [routerLink]="[{ outlets: { primary: ['investor'], modal: ['rm'] } }]">
-		InvestorView + Sidebar
+	<a [routerLink]="[{ outlets: { primary: ['investor'], modal: ['investor-view'] } }]">
+		InvestorView + Investor in modal
   </a>
 </div>
 
