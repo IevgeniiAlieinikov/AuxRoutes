@@ -12,9 +12,9 @@ const routes: Routes = [
     loadChildren: () => import(`./investor/investor.module`).then(m => m.InvestorModule)
   },
   {
-    path: '**',
+    path: 'modal',
     loadChildren: () => import(`./shared/shared.module`).then(m => m.SharedModule),
-    outlet: 'modal',
+    outlet: 'aux',
   },
   {
     path: '**', redirectTo: '/product/list'

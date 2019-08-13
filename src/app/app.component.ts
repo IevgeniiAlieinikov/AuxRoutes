@@ -18,20 +18,20 @@ export class AppComponent {
 
   openInvestorModal() {
     this.openModal();
-    this._router.navigate(['.', { outlets: { modal: ['investor-view'] } }], {
+    this._router.navigate(['.', { outlets: { aux: ['modal', 'investor-view'] } }], {
       relativeTo: this._route.parent
     });
   }
 
   openProductModal() {
     this.openModal();
-    this._router.navigate(['.', { outlets: { modal: ['product', 'list'] } }], {
+    this._router.navigate(['.', { outlets: { aux: ['modal', 'product', 'list'] } }], {
       relativeTo: this._route.parent
     });
   }
 
   closeModal() {
-    this._router.navigate(['.', { outlets: { modal: null } }], {
+    this._router.navigate(['.', { outlets: { aux: null } }], {
       relativeTo: this._route.parent
     });
 
