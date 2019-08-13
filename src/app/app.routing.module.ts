@@ -17,7 +17,7 @@ const routes: Routes = [
     outlet: 'aux',
   },
   {
-    path: '**', redirectTo: '/product/list'
+    path: '**', redirectTo: '/'
   }
 ];
 
