@@ -1,3 +1,23 @@
 ul {
   text-align: center;
 }
+
+.menuItem {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  margin: 2px;
+  border-top-style: inset;
+  border-right-style: outset;
+  border-bottom-style: inset;
+  border-left-style: outset;
+}
+
+.menu {
+  text-align: center;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}

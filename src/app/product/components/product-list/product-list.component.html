@@ -1,9 +1,7 @@
-<h1>Products List</h1>
+<h2>Products View</h2>
 
 <ul>
 	<li *ngFor="let product of products">
 		<a [routerLink]="['/product/details/', product.id]">{{product.name}}</a>
 	</li>
 </ul>
-
-<a routerLink="/">Go To Home</a>
